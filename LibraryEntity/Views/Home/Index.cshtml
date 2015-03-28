@@ -1,0 +1,10 @@
+﻿@model List<LibraryEntity.Model.Book>
+@foreach (var b in Model)
+{
+    @b.Title <br />
+    @b.Author <br />
+    @b.Genre <br />
+    @Html.ActionLink("Details", "Details", new { id = b.BookID }, new { @class = "btn btn-default" })<br /><br />
+}
+
+@Html.ActionLink("Add New Book", "AddBook", null, new { @class = "btn btn-default" })

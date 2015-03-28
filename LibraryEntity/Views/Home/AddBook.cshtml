@@ -1,0 +1,17 @@
+﻿@model LibraryEntity.Model.Book
+@{
+    ViewBag.Title = "Add Book";
+}
+
+<h2>Add New Book</h2>
+
+<form method="post">
+    @Html.LabelFor(x => x.Title)<br />
+    @Html.TextBoxFor(x => x.Title) <br />
+    @Html.LabelFor(x => x.Author) <br />
+    @Html.TextBoxFor(x => x.Author) <br />
+    @Html.LabelFor(x => x.Genre)<br />
+    @Html.TextBoxFor(x => x.Genre) <br />
+    <br />
+    <button type="submit" class="btn btn-default">Add Book</button>
+</form>

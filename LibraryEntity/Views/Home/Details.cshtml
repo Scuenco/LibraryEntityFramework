@@ -1,0 +1,12 @@
+﻿@model LibraryEntity.Model.Book
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+@Model.Title <br />
+@Model.Author <br />
+@Model.Genre <br />
+@Html.ActionLink("Edit", "EditBook", new { id = Model.BookID }, new { @class = "btn btn-default" })
+@Html.ActionLink("Delete", "DeleteBook", new { id = Model.BookID }, new { @class = "btn btn-default" })
+
